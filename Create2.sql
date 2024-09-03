@@ -16,7 +16,7 @@ ORDER BY price DESC
 --Your code below this line
 SELECT bk.title, bk.author, bk.publisher, bk.pages 
 FROM book AS bk 
-WHERE bk.pages > 700 OR bk.pages < 500 AND bk.price < 35
+WHERE (bk.pages > 700 OR bk.pages < 500) AND bk.price < 35
 ORDER BY pages DESC
 
 --The video game store needs a list of publishers. Each publisher should only be listed once and the list should be alphabetized.
