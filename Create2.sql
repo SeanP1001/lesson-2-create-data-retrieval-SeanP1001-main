@@ -36,7 +36,7 @@ ORDER BY metacritic_score DESC, user_score DESC
 --Your code below this line
 SELECT vg.title
 FROM video_game AS vg
-WHERE vg.platform <> 'mobile' AND vg.metacritic_score > 85 AND vg.metacritic_score < 100
+WHERE vg.platform <> 'mobile' AND vg.metacritic_score BETWEEN 85 AND 100
 
 --A car dealer needs to know the make, model, year, and fuel type of all cars that have a model starting with "C". The list should be sorted alphabetically by make and model with the newest models listed first.
 --Your code below this line
